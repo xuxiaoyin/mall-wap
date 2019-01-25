@@ -1,0 +1,20 @@
+body {
+	background: #f0f0f0;
+	color: #333233
+}
+
+.active {
+	color: #ee1d89 !important;
+}
+
+.bg-gray {
+	background: #f5f5f5;
+}
+
+.bg-gray1 {
+	background: #ccc;
+}
+
+.text-gray {
+	color: #b5b5b5
+}

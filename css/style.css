@@ -1,0 +1,107 @@
+//css reset
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+//  / 解决IOS默认滑动很卡的情况 */
+    -webkit-overflow-scrolling : touch;
+}
+body {
+    font-family: 'Microsoft YaHei', Tahoma, Arial, sans-serif;
+    font-size: 0.48rem
+}
+
+html,body { margin: 0; padding: 0;}
+img {
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+ul { margin: 0; padding: 0; list-style: none;}
+li,p { margin:0;}
+///单行溢出/
+.one-txt-cut{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+///多行溢出 手机端使用/
+.txt-cut{
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    /// -webkit-line-clamp: 2; /
+    -webkit-box-orient: vertical;
+}
+/// 移动端点击a链接出现蓝色背景问题解决 */
+a:link,a:active,a:visited,a:hover {
+    background: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
+a {
+    text-decoration: none;
+}
+
+
+.main {
+    padding-bottom: 2rem;
+    width: 15rem;
+    margin: 0 auto;
+}
+.footer-bar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    background: #fff;
+}
+.footer-bar .item {
+    flex: 1;
+    text-align: center;
+    color: #848484;
+    font-size: 0.56rem;
+}
+.footer-bar .iconfont {
+    display: block;
+    height: 1rem;
+    font-size: 0.88rem
+}
+
+.logistics { margin-top: 0.7rem; }
+.mini-info { display: flex; padding: 0 .48rem 0 0.44rem; height: 3.52rem; }
+.mini-info .pic { flex: 0 0 3.2rem; width: 3.2rem; height: 3.2rem; margin-top: 0.16rem; margin-right: 0.4rem;}
+.mini-info .text { flex: 1; display: flex; flex-flow: column; justify-content: space-between;} 
+.mini-info .text .name { line-height: 0.72rem; margin-top: 0.2rem;}
+.mini-info .text .info { line-height: 0.76rem; font-size: 0.44rem;}
+.mini-info .text >div { display: flex;}
+.mini-info .desc, .mini-info .weight { padding-right: 1.36rem;}
+.mini-info .price,.mini-info .sum { text-align: right; flex: 1;}
+
+.record-info { background: #fff; padding: 0.2rem 0.44rem; color: #666;}
+.record-info .item { position: relative; padding-left: 1.7rem; margin-top: 0.96rem;}
+.record-info .item .bg-gray1 { position: absolute; width: 0.48rem; height: 0.48rem; border-radius: 50%; border: 0.16rem solid #f2f2f2; left: 0; top: 0.36rem}
+.record-info .active .bg-gray1 { background: #ee1d89;}
+.record-info .item .time { line-height: 0.72rem; font-size: 0.44rem; }
+.record-info .item .desc { line-height: 0.8rem; font-size: 0.52rem; }
+.record-info .number { padding: 0.24rem 0.36rem; margin-top: 0.2rem; font-size: 0.52rem; color: #999;}
+
+.return-sche { margin-top: 0.8rem;}
+.retuen-list{ width: 100%; padding: 0.44rem; background: #fff; margin-bottom: 0.48rem;  line-height: 1.12rem; font-size: 0.52rem;}
+.retuen-list .title { color: #2d2d2d;}
+.retuen-list .result { color: #666;}
