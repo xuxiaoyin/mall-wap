@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>我的积分</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/theme.css"/>
+	<link rel="stylesheet" type="text/css" href="css/font.css"/>
+</head>
+<script>
+	var html = document.getElementsByTagName('html')[0];
+	var pageWidth = html.getBoundingClientRect().width;
+	pageWidth = pageWidth > 750 ? 750 : pageWidth;
+	html.style.fontSize = pageWidth / 15 + 'px';
+</script>
+	
+<body>
+	<div class="main">
+		<div class="my-score">
+			<div class="switch">
+				<span class="on">我的积分</span>
+				<span class="normal">积分记录</span>
+			</div>
+			<div class="time-price">
+				及时价格：<span class="text-red">0.0025</span> 元/1积分
+			</div>
+	        <div class="card-info">
+	      	   <p>我的积分:100.00</p>
+	        </div>
+	        <div class="sure-btn">
+	           <input type="button" value="出售积分" class="btn">
+	           <input type="button" value="转赠积分" class="btn">
+	        </div>
+	        <div class="card-tips">
+		      	<p class="tips-list tips-list1">
+		      		<span>在售积分：10.00</span>
+		      		<span>已售积分：10.00</span>
+		      		<span>已售金额：10.00</span>
+		      	</p>
+		     </div>
+		     <div class="search-score">
+		     	<span class="name left">日期搜索：</span>
+		     	<input type="text" class="inp left" />
+		     	<span class="sure-btn left">
+		     		<input type="button" value="搜索" class="btn"/>
+		     	</span>
+		     </div>
+		     <div class="search-result">
+		     	<div class="title">近一周积分时价</div>
+		     	<div class="canvas">
+		     		<img src="images/mycard.png" />
+		     	</div>
+		     </div>
+		</div>
+		<div class="footer-bar">
+			<div class="item"><span class="iconfont icon-home"></span>首页</div>
+			<div class="item"><span class="iconfont icon-caidan"></span>分类</div>
+			<div class="item"><span class="iconfont icon-gouwucheman"></span>购物车</div>
+			<div class="item active"><span class="iconfont icon-wode"></span>个人中心</div>
+		</div>
+	</div>
+	
+	<div class="mark-layer">
+		<div class="popup">
+			<div class="info">
+				<ul class="list">
+					<li class="item clearfix">
+						<span class="name left">出售积分：</span>
+						<input type="text" class="inp left" placeholder="请输入出售积分"/>
+					</li>
+					<li class="info-list info-list1">
+						当前时价：0.0025元/1积分
+					</li>
+				</ul>
+			</div>
+			<div class="sure-btn">
+				<input type="button" value="确认"  class="btn"/>
+				<input type="button" value="取消" class="btn"/>
+			</div>
+		</div>
+	</div>
+</body>
+
+
+</html>

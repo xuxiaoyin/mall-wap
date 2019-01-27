@@ -1,0 +1,96 @@
+.tab{
+  width: 100%;
+  text-align: center;
+  background: #f0f0f0;
+  height: 4rem;
+  font-size: 0;
+}
+.tab .li{
+  width: 40%;
+  height: 2rem;
+  background: #fff;
+  text-align: center;
+  line-height: 2rem;
+  display: inline-block;
+  font-size: 12px;
+  margin: 1rem 0;
+}
+.tab .active{
+  background: #ee1d89;
+  color: #fff;
+}
+.tab .li:nth-child(1){
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.tab .li:nth-child(2){
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.tab_div{
+  display: none;
+}
+.tab_active{
+  display: block;
+}
+.one{
+  width: 100%;
+
+}
+ .one li p{
+    font-size: 35px;
+    color: #000000;
+    text-align: center;
+    line-height: 6rem;
+  }
+.one li .btn{
+  width: 80%;
+  overflow: hidden;
+  margin:0 10%;
+
+}
+.one li .btn button{
+  float: left;
+  width: 5rem;
+  height: 2rem;
+  color: #fff;
+  background: #ee1d89;
+}
+.one li .btn button:last-child{
+  float: right;
+}
+.two{
+  width: 100%;
+
+}
+.two li{
+  width: 100%;
+  background: #fff;
+  margin-bottom: 10px;
+}
+.two li .shengyu{
+  width: 100%;
+  padding: 0 5px;
+  box-sizing: border-box;
+  text-align: right;
+  font-size: 14px;
+  margin-bottom: 5px;
+
+}
+.two li .chongzhi{
+  width: 100%;
+  padding: 0 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  text-align: left;
+  color: #ff0101;
+  margin-bottom: 8px 0;
+
+}
+.two li .time{
+  font-size: 12px;
+   width: 100%;
+  padding: 0 5px;
+  box-sizing: border-box;
+  text-align: right;
+}

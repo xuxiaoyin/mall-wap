@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>我的余额提现</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/theme.css"/>
+	<link rel="stylesheet" type="text/css" href="css/font.css"/>
+</head>
+<script>
+	var html = document.getElementsByTagName('html')[0];
+	var pageWidth = html.getBoundingClientRect().width;
+	pageWidth = pageWidth > 750 ? 750 : pageWidth;
+	html.style.fontSize = pageWidth / 15 + 'px';
+</script>
+	
+<body>
+	<div class="main">
+		<div class="my-score">
+			<div class="switch">
+				<span class="on">我的余额</span>
+				<span class="normal">余额记录</span>
+			</div>
+	      <div class="card-info">
+	      	<p>我的余额:100.00</p>
+	      </div>
+	      <div class="sure-btn sure-btn-one">
+	        <input type="button" value="提现" class="btn">
+	      </div>
+	      <div class="card-tips">
+	      	<p class="tips-list">已被冻结余额：50.00</p>
+	      	<p class="tips-list">（被冻结余额无法提现）</p>
+	      </div>
+		</div>
+		<div class="footer-bar">
+			<div class="item"><span class="iconfont icon-home"></span>首页</div>
+			<div class="item"><span class="iconfont icon-caidan"></span>分类</div>
+			<div class="item"><span class="iconfont icon-gouwucheman"></span>购物车</div>
+			<div class="item active"><span class="iconfont icon-wode"></span>个人中心</div>
+		</div>
+	</div>
+</body>
+
+
+</html>

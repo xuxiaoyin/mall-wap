@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>退货申请</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/theme.css"/>
+	<link rel="stylesheet" type="text/css" href="css/font.css"/>
+</head>
+<script>
+	var html = document.getElementsByTagName('html')[0];
+	var pageWidth = html.getBoundingClientRect().width;
+	pageWidth = pageWidth > 750 ? 750 : pageWidth;
+	html.style.fontSize = pageWidth / 15 + 'px';
+</script>
+	
+<body>
+	<div class="main rate">
+		<div class="rate-add ruturn-goods">
+			<div class="title">退货原因：</div>
+			<div class="txt-wrap">
+				<textarea class="inp txt" placeholder="请说明换货原因"></textarea>
+			</div>
+			<div class="title border-top">上传凭证：</div>
+			<div class="file">
+				<a href="javascript:">上传图片</a>
+			</div>
+		</div>
+		<div class="savve-btn">
+			<input type="button" value="提交" class="btn" />
+		</div>
+		
+		<div class="footer-bar">
+			<div class="item"><span class="iconfont icon-home"></span>首页</div>
+			<div class="item"><span class="iconfont icon-caidan"></span>分类</div>
+			<div class="item"><span class="iconfont icon-gouwucheman"></span>购物车</div>
+			<div class="item active"><span class="iconfont icon-wode"></span>个人中心</div>
+		</div>
+	</div>
+</body>
+
+
+</html>

@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>新增收货地址</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/theme.css"/>
+	<link rel="stylesheet" type="text/css" href="css/font.css"/>
+</head>
+<script>
+	var html = document.getElementsByTagName('html')[0];
+	var pageWidth = html.getBoundingClientRect().width;
+	pageWidth = pageWidth > 750 ? 750 : pageWidth;
+	html.style.fontSize = pageWidth / 15 + 'px';
+</script>
+	
+<body>
+	<div class="main">
+		<div class="personal-info">
+			<ul class="list">
+				<li class="item">
+					<span class="name"><span class="text-red">*</span> 收货姓名：</span>
+					<input class="inp" placeholder="请输入收货姓名"/>
+				</li>
+				<li class="item">
+					<span class="name"><span class="text-red">*</span> 手机号码：</span>
+					<input class="inp" placeholder="请输入手机号码"/>
+				</li>
+				<li class="item">
+					<span class="name">电子邮箱：</span>
+					<input class="inp" placeholder="请输入电子邮箱" />
+				</li>
+				<li class="item">
+					<span class="name"><span class="text-red">*</span> 配送区域：</span>
+					<div class="sel-wrap">
+						<select class="sel inp">
+							<option value="请选择" selected=""></option>
+						</select>
+						<select class="sel inp">
+							<option value="请选择" selected=""></option>
+						</select>
+					</div>	
+				</li>
+				<li class="item txt-wrap">
+					<span class="name"><span class="text-red">*</span> 详细地址：</span>
+					<textarea class="txt inp" placeholder="请输入详细地址"></textarea>
+				</li>
+				<li class="item">
+					<span class="name">邮政编码：</span>
+					<input class="inp" placeholder="请输入邮政编码"/>
+				</li>
+			</ul>
+			<div class="savve-btn">
+				<input type="button" value="保存"  class="btn"/>
+			</div>
+		</div>
+		
+		<div class="footer-bar">
+			<div class="item"><span class="iconfont icon-home"></span>首页</div>
+			<div class="item"><span class="iconfont icon-caidan"></span>分类</div>
+			<div class="item"><span class="iconfont icon-gouwucheman"></span>购物车</div>
+			<div class="item active"><span class="iconfont icon-wode"></span>个人中心</div>
+		</div>
+	</div>
+</body>
+
+
+</html>

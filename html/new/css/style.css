@@ -1,0 +1,265 @@
+//css reset
+
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+//  / 解决IOS默认滑动很卡的情况 */
+    -webkit-overflow-scrolling : touch;
+}
+body {
+    font-family: 'Microsoft YaHei', Tahoma, Arial, sans-serif;
+    font-size: 0.48rem
+}
+
+html,body { margin: 0; padding: 0;}
+img {
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+input {
+	outline: none;
+}
+ul { margin: 0; padding: 0; list-style: none;}
+li,p,h1{ margin:0;}
+///单行溢出/
+.one-txt-cut{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+///多行溢出 手机端使用/
+.txt-cut{
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    /// -webkit-line-clamp: 2; /
+    -webkit-box-orient: vertical;
+}
+/// 移动端点击a链接出现蓝色背景问题解决 */
+a:link,a:active,a:visited,a:hover {
+    background: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+}
+a{ color: #333;}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
+a {
+    text-decoration: none;
+}
+
+
+.main {
+    padding-bottom: 2rem;
+    width: 15rem;
+    margin: 0 auto;
+}
+.footer-bar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    background: #fff;
+}
+.footer-bar .item {
+    flex: 1;
+    text-align: center;
+    color: #848484;
+    font-size: 0.56rem;
+}
+.footer-bar .iconfont {
+    display: block;
+    height: 1rem;
+    font-size: 0.88rem;
+    border-top: 1px solid #f4f4f4;
+}
+.mark-layer {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0,0,0,.5);
+	color: #000;
+}
+.mark-layer .popup {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	margin-left: -6.4rem;
+	width: 12.8rem;
+	min-height: 7.1rem;
+	padding: 0.64rem;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-between;
+	background: #fff;
+	box-sizing: border-box;
+	border-radius: 0.32rem;
+}
+.mark-layer .info .info-list {
+	text-align: center;
+	font-size: 0.6rem;
+}
+.mark-layer .info .item {
+	margin-bottom: 0.4rem;
+}
+.mark-layer .info .name{
+	width: 4.24rem;
+	font-size: 0.6rem;
+	line-height: 1.32rem;
+	text-align: right;
+}
+.mark-layer .info .inp{
+	width: 5.2rem;
+	height: 1.32rem;
+	background: #f0f0f0;
+	font-size: 0.6rem;
+}
+.mark-layer .sure-btn {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logistics { margin-top: 0.7rem; }
+.mini-info { display: flex; padding: 0 .48rem 0 0.44rem; height: 3.52rem; }
+.mini-info .pic { flex: 0 0 3.2rem; width: 3.2rem; height: 3.2rem; margin-top: 0.16rem; margin-right: 0.4rem;}
+.mini-info .text { flex: 1; display: flex; flex-flow: column; justify-content: space-between;} 
+.mini-info .text .name { line-height: 0.72rem; margin-top: 0.2rem;}
+.mini-info .text .info { line-height: 0.76rem; font-size: 0.44rem;}
+.mini-info .text >div { display: flex;}
+.mini-info .desc, .mini-info .weight { padding-right: 1.36rem;}
+.mini-info .price,.mini-info .sum { text-align: right; flex: 1;}
+
+.record-info { background: #fff; padding: 0.2rem 0.44rem; color: #666;}
+.record-info .item { position: relative; padding-left: 1.7rem; margin-top: 0.96rem;}
+.record-info .item .bg-gray1 { position: absolute; width: 0.48rem; height: 0.48rem; border-radius: 50%; border: 0.16rem solid #f2f2f2; left: 0; top: 0.36rem}
+.record-info .active .bg-gray1 { background: #ee1d89;}
+.record-info .item .time { line-height: 0.72rem; font-size: 0.44rem; }
+.record-info .item .desc { line-height: 0.8rem; font-size: 0.52rem; }
+.record-info .number { padding: 0.24rem 0.36rem; margin-top: 0.2rem; font-size: 0.52rem; color: #999;}
+
+.return-sche { margin-top: 0.8rem;}
+.retuen-list{ width: 100%; padding: 0.44rem; background: #fff; margin-bottom: 0.48rem;  line-height: 1.12rem; font-size: 0.52rem;}
+.retuen-list .title { color: #2d2d2d;}
+.retuen-list .result { color: #666;}
+
+.send .top-title { display: flex; height: 3.5rem; padding-left: 0.52rem; align-items: center;}
+.top-title .pic { flex: 0 0 1.84rem; width: 1.84rem; height: 1.84rem;}
+.top-title .text { flex: 1; font-size: 0.72rem; margin-left: 0.7rem; color: #fff;}
+
+.send-list { background: #fff;}
+.send-list .list { line-height: 1rem; font-size: 0.56rem; padding: 0.4rem 0.44rem; }
+.send-list .address { display: flex; }
+.send-list .address .name { white-space: nowrap;}
+.send-list .oriding{ font-size: 0.52rem}
+.send-list .total { height: 1.08rem; line-height: 1.08rem; font-size: 0.48rem; padding: 0 0.44rem; }
+.send-list .total .right { border-bottom: 1px solid #e1edc3; width: 100%; text-align: right;}
+.send-list .total .price { margin-left: 0.56rem;}
+
+.oriding-info .item { line-height: 0.92rem; font-size: 0.52rem}
+
+.pay-list .oriding {margin: 0.4rem 0;}
+.pay-list .chechbtn {/* margin-bottom: 0.2rem;*/}
+.pay-list .oriding-info { padding: 0.4rem 0.44rem;}
+
+.distribution .list { margin-top: 0.2rem;}
+.distribution .item { margin-bottom: 0.2rem;}
+.distribution .data { line-height: 1.2rem; padding: 0 0.22rem; background: #fff; font-size: 0.52px; margin-bottom: 0.1rem;}
+.distribution .data .time{ margin-right: 0.18rem;}
+.distribution .detail { display: flex; background: #fff; align-items: top;}
+.distribution .detail .user-pic { flex: 0 0 6rem; width: 6rem; text-align: center; margin-top: 0.6rem;}
+.detail .user-pic img{ width: 3rem; height: 3rem; border-radius: 50%;}
+.distribution .detail .info { margin: 0.44rem 0; font-size: 0.6rem; line-height: 0.9rem;}
+
+.team { padding: 0 0.76rem; font-size: 0.64rem;}
+.team-tab { display: flex; margin: 0.76rem 0; justify-content: space-between;}
+.team-tab .tab-nav { width: 4rem; height: 4rem; background: #fff; border-radius: 0.32rem; padding: 0.56rem; box-sizing: border-box;}
+.team-tab .tab-nav span{ display: block; text-align: center; line-height: 1.44rem;}
+.team-title { line-height: 1.4rem; text-align: center; font-weight: normal; font-size: 0.64rem; margin-bottom: 2px; background: #fff;}
+.team-list .item{ display: flex; height: 4.08rem; background: #fff; margin-bottom: 2px; align-items: top;}
+.team-list .item .user-pic { flex: 0 0 5.24rem; width: 5.24rem; text-align: center;}
+.team-list .item .user-pic img{ width: 3rem; height: 3rem; border-radius: 50%; margin-top: 0.54rem;}
+.team .info { margin-top: 0.48rem; line-height: 1.6rem;}
+.team .info .name { margin-right: 1.6rem;}
+
+.personal-info { margin-top: 0.6rem; padding: 0 0.48rem;}
+.personal-info .list { margin-bottom: 3rem; }
+.personal-info .item { display: flex; line-height: 1.76rem; margin-bottom: 0.3rem;}
+.personal-info .name { flex: 1; font-size: 0.6rem; text-align: right; white-space: nowrap;}
+.personal-info .inp { flex: 0 0 10.62rem; width: 10.62rem;}
+.personal-info .tips { text-align: center; font-size: 0.48rem; line-height: 0.8rem;  color: #000;}
+.txt-wrap { align-items: top;}
+.txt-wrap .txt{flex: 0 0 10.62rem; width: 10.62rem; height: 3rem; line-height: 1.76rem;}
+.personal-info .sel-wrap{ flex: 0 0 10.62rem; width: 10.62rem; display: flex; justify-content: space-between;}
+.personal-info .sel{ flex: 0 0 5.15rem; width: 5.15rem; }
+
+.rate-add{ padding:0 0.44rem 0.44rem; margin-top: 0.72rem; background: #fff;}
+.rate-add .product-dese { display: flex; padding-top: 0.44rem;}
+.rate-add .product-dese .pic{ flex: 0 0 1.76rem; width: 1.76rem; margin: 0 0.36rem 0.36rem 0;}
+.rate-add .product-dese .pic img{ width: 1.76rem; height: 1.76rem; border-radius: 50%;}
+.rate-add .product-dese .text{ line-height: 1.2rem; margin-top: 0.36rem; color: #2d2d2d; font-size: 0.52rem}
+.rate-add .txt{width: 100%; background: #f0f0f0; height: 5.6rem;}
+.rate-add .file { margin: 0.44rem 0;}
+.rate .savve-btn { margin-top: 2rem;}
+.rate-add .title { padding:0.44rem 0; font-size: 0.6rem; color: #2d2d2d;}
+
+.ruturn-goods .txt-wrap { margin-bottom: 0.44rem;}
+.ruturn-goods .border-top {  border-top: 1px solid #f0f0f0;}
+
+.address-list .list{ margin-top: 0.72rem; line-height: 0.8rem; min-height: 16.4rem;}
+.address-list .list .item{  padding: 0.44rem; background: #fff; font-size: 0.56rem; color: #474747; margin-bottom: 0.48rem;}
+.address-list .item .tel{ margin-bottom: 0.2rem;}
+.address-list .item .address { padding: 0.32rem 0; border-bottom: 0.02rem solid #e9e9e9;}
+.address-list .item .opera { margin-top: 0.4rem; line-height: 0.88rem; text-align: right;  font-size: 0;}
+.address-list .opera a{ display: inline-block; padding-left: 0.7rem; font-size: 0.48rem;}
+.address-list .opera .edit { margin-right: 0.8rem; background: url(../images/edit.png) no-repeat 0 center; background-size: 0.6rem;}
+.address-list .opera .delte { background: url(../images/delte.png) no-repeat 0 center; background-size: 0.6rem;}
+
+.my-order{ background: none;}
+.order-tab{ display: flex; height: 1.8rem; line-height: 1.8rem; font-size: 0.52rem; margin-bottom: 0.8rem; background: #fff;}
+.order-tab .tab-nav{ flex: 1; text-align: center;}
+.order-tab .active{ border-bottom: 1px solid #ee1d89;}
+.my-order .list-wrap{ background: #fff; margin-bottom: 0.44rem;}
+.my-score .list{ background: #fff; margin-bottom: 0.4rem; padding: 0.4rem; font-size: 0.56rem;}
+.my-score .list .right1{ text-align: right;}
+.my-score .list .info { line-height: 0.8rem; margin: 0.4rem 0;}
+
+.my-score .card-info { text-align: center; font-size: 0.9rem; padding: 3rem 0;}
+.my-score .sure-btn { display: flex; text-align: center; width: 11.28rem; justify-content: space-between; margin: 0 auto;}
+
+.card-tips{ text-align: center; line-height: 1rem; font-size: 0.6rem; margin-top: 0.2rem;}
+.my-score .time-price { line-height: 1.6rem; text-align: center; font-size: 0.6rem; background: #fff; font-weight: 700;}
+.time-price .text-red { font-size: 1.2rem; font-style: italic;}
+.card-tips .tips-list1 { font-size: 0.56rem; display: flex; justify-content: space-between; margin-top: 1rem;}
+.card-tips .tips-list1 span{ flex: 1;}
+
+.search-score { height: 1.36rem; line-height: 1.36rem; padding: 0 0.44rem; margin: 1.6rem 0 1rem 0;}
+.search-score .inp{ height: 1.36rem; width: 7.1rem; margin: 0 0.32rem;}
+.search-score .sure-btn { display: inline-block; width: 2.6rem; height: 1.36rem;}
+.search-result { padding-bottom: 1.48rem; background: #fff;}
+.search-result .title{ line-height: 1.44rem; margin-bottom: 0.52rem; text-align: center; font-size: 0.72rem;}
+.search-result .canvas { text-align: center; width: 13.2rem; height: 7.68rem; margin: 0 auto;}
+
+.mark-layer .info .info-list1 { font-size: 0.52rem; margin: 0.4rem 0 1.2rem 0;}

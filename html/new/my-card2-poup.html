@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>我的奖金</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/theme.css"/>
+	<link rel="stylesheet" type="text/css" href="css/font.css"/>
+</head>
+<script>
+	var html = document.getElementsByTagName('html')[0];
+	var pageWidth = html.getBoundingClientRect().width;
+	pageWidth = pageWidth > 750 ? 750 : pageWidth;
+	html.style.fontSize = pageWidth / 15 + 'px';
+</script>
+	
+<body>
+	<div class="main">
+		<div class="my-score">
+			<div class="switch">
+				<span class="on">我的奖金</span>
+				<span class="normal">奖金记录</span>
+			</div>
+	      <div class="card-info">
+	      	<p>我的奖金:100.00</p>
+	      </div>
+	      <div class="sure-btn sure-btn-one">
+	        <input type="button" value="提现" class="btn">
+	      </div>
+		</div>
+		<div class="footer-bar">
+			<div class="item"><span class="iconfont icon-home"></span>首页</div>
+			<div class="item"><span class="iconfont icon-caidan"></span>分类</div>
+			<div class="item"><span class="iconfont icon-gouwucheman"></span>购物车</div>
+			<div class="item active"><span class="iconfont icon-wode"></span>个人中心</div>
+		</div>
+	</div>
+	<div class="mark-layer">
+		<div class="popup">
+			<div class="info">
+				<ul class="list">
+					<li class="item clearfix">
+						<span class="name left">提现奖金：</span>
+						<input type="text" class="inp left" placeholder="请输入提现奖金"/>
+					</li>
+				</ul>
+			</div>
+			<div class="sure-btn">
+				<input type="button" value="确认"  class="btn"/>
+				<input type="button" value="取消" class="btn"/>
+			</div>
+		</div>
+	</div>
+</body>
+
+
+</html>

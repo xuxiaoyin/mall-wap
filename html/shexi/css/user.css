@@ -1,0 +1,203 @@
+body {
+  background: #f0f0f0; }
+
+.myHeader {
+  background-image: linear-gradient(0deg, #fd4876 0%, #fa8ea9 100%);
+  height: 140px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  position: relative; }
+  .myHeader img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%; }
+    .myHeader .code{
+      width: 4.1rem;
+      height: 4.1rem;
+    margin-left: 8rem;
+    }
+     .myHeader .code img{
+      border-radius: 0;
+     }
+  .myHeader .imgDesc {
+    margin-left: 10px; }
+    .myHeader .imgDesc .name {
+      font-size: 16px;
+      margin-bottom: 6px;
+      color: #ffffff; }
+    .myHeader .imgDesc .time {
+      font-size: 12px;
+      color: #ffffff; }
+.jifen_{
+  width: 100%;
+  height: 1.7rem;
+  background: #ff89c6;
+}
+.jifen_ .li{
+  width: 33.33%;
+  height: 100%;
+  font-size: 12px;
+  color: #fff;
+  float: left;
+  line-height: 1.7rem;
+  text-align: center;
+}
+.tab{
+  width: 100%;
+  text-align: center;
+  background: #f0f0f0;
+  height: 4rem;
+  font-size: 0;
+}
+.tab .li{
+  width: 40%;
+  height: 2rem;
+  background: #fff;
+  text-align: center;
+  line-height: 2rem;
+  display: inline-block;
+  font-size: 12px;
+  margin: 1rem 0;
+}
+.tab .active{
+  background: #ee1d89;
+  color: #fff;
+}
+.tab .li:nth-child(1){
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.tab .li:nth-child(2){
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.tab_div{
+  display: none;
+}
+.tab_active{
+  display: block;
+}
+.team {
+  width: 100%;
+  height: 7rem;
+  background: #fff;
+  position: relative;
+  margin-bottom: 8px;
+}
+.team p{
+  font-size: 25px;
+  text-align: center;
+  color: #000;
+  line-height: 3rem;
+  
+}
+.team a{
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.1rem;
+  font-size: 14px;
+  color: #000;
+}
+.erweima_model{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  background: rgba(0,0,0,0.5);
+  display: none;
+}
+.erweima_model .model_detail{
+  width: 80%;
+  height: 80%;
+  background: #fff;
+  margin:10% 10%;
+  overflow: hidden;
+}
+.erweima_model .model_detail .img{
+  width: 100%;
+  height: 40%;
+  background: #ee1d89;
+  overflow: hidden;
+}
+.erweima_model .model_detail .img img{
+  width: 4rem;
+  height: 4rem;
+  display: block;
+  margin:3rem auto; 
+}
+.erweima_model .model_detail .erweima_img{
+  width: 8rem;
+  height: 8rem;
+  display: block;
+  margin:4rem auto 5px;
+}
+.erweima_model .model_detail p{
+  width: 100%;
+  font-size: 14px;
+  text-align: center;
+}
+.order {
+  background: #fff;
+  padding: 11px 0 27px 0;
+border-bottom: 5px solid #f2f2f2;}
+  .order .title {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #666666;
+    padding: 0 10px; }
+    .order .title > .a {
+      color: #aaa9a9;
+      font-size: 12px; }
+  .order .ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px; }
+    .order .ul .li {
+
+      width: 25%; }
+      .order .ul .li > .a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        color: #858585;
+        font-size: 32rpx; }
+        .order .ul .li > .a img {
+          width: 44px;
+          height: 44px;
+          margin-bottom: 10px; }
+
+.list .li {
+  padding: 12px 10px;
+   background: #fff;
+  border-bottom: 5px solid #f2f2f2; }
+  .list .li .a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .list .li .a .span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #858585;
+      font-size: 14px; }
+      .list .li .a .span .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0.3rem; }
+        .list .li .a .span .icon > img {
+          width: 1rem !important;
+          height: 1rem !important; }
+      .list .li .a .span .adres img {
+        height: 0.88rem !important; }
+    .list .li .a > img {
+      width: 12px;
+      height: 14px; }
+
+/*# sourceMappingURL=my.wxss.map */

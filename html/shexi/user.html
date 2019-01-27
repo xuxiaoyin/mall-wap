@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="div port" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+		<meta name="misapplication-tap-highlight" content="no"/>
+		<meta name="HandheldFriendly" content="true"/>
+		<meta name="MobileOptimized" content="320"/>
+		<title>商城</title>
+		<script src="js/mui.min.js"></script>
+    	<script src="js/jquery.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/user.css"/>
+		<link rel="stylesheet" type="text/css" href="css/font.css"/>
+		<script type="text/javascript" src="js/update.js"></script>
+		<!-- <script type="text/javascript" src="js/common.js"></script> -->
+	</head>
+	<script type="text/javascript">
+		$(function () {
+			$('.tab .li').click(function(){
+				let index = $(this).index();
+				$('.tab .li').eq(index).addClass('active').siblings().removeClass('active');
+				$('.tab_div').eq(index).addClass('tab_active').siblings().removeClass('tab_active');
+
+			})
+			$('.erweima_model').click(function(){
+				$(this).hide()
+			})
+			$('.code').click(function(){
+				$('.erweima_model').show()
+			})
+		})
+	</script>
+	<body>
+		
+		<div class="main">
+			<!--pages/my/my.wxml-->
+
+			<div class="wrap">
+			    <div class="myHeader">
+			        <img src="img/user_img.png"></img>
+			        <div class="imgDesc">
+			            <div class="name">宋书航</div>
+			            <div class="time">ID：001</div>
+			            <div class="time">会员身份：代理商</div>
+			        </div>
+			        <div class="code"><img src="img/erweima.png"></div>
+			    </div>
+				<div class="jifen_">
+					<div class="li">
+						积分：1000.00
+					</div>
+					<div class="li">
+						余额：1000.00
+					</div>
+					<div class="li">
+						奖金：1000.00
+					</div>
+				</div>
+				<div class="tab">
+					<div class="li active" >会员中心</div>
+					<div class="li">分销中心</div>
+				</div>
+			   	<div class="tab_div tab_active">
+			   		<div class="content">
+				        <div class="order">
+				            <div class="title">我的订单 <div class="a">查看全部订单></div></div>
+				            <div class="ul">
+				                <div class="li">
+				                    <div class="a">
+				                        <img src="img/o1.png"  alt=""></img>
+				                       	待付款
+				                    </div>
+				                </div>
+				                <div class="li">
+				                    <div class="a">
+				                        <img src="img/o2.png"  alt=""></img>
+				                       	待发货
+				                    </div>
+				                </div>
+				                <div class="li">
+				                    <div class="a">
+				                        <img src="img/o3.png"  alt=""></img>
+				                       	已收货
+				                    </div>
+				                </div>
+				                <div class="li">
+				                    <div class="a">
+				                        <img src="img/o4.png"  alt=""></img>
+				                       	退换货
+				                    </div>
+				                </div>
+
+				            </div>
+				        </div>
+				    </div>
+				    <div class="line"></div>
+				    <div class="ul list">
+			            <div class="li">
+			                <div class="a">
+			                    <div class="span"><div style="height: 23px;" class="icon"><img src="img/list1.png"></img></div>我的购物车</div>
+			                    <img src="./img/myjt.png" alt=""/>
+			                </div>
+			            </div>
+			            <div class="li">
+			                <div class="a">
+			                    <div class="span"><div style="height: 23px;" class="icon"><img src="img/list2.png"></img></div>我的购物券</div>
+			                    <img src="./img/myjt.png" alt=""/>
+			                </div>
+			            </div>
+			            <div class="li" >
+			                <div class="a">
+			                    <div class="span"><div style="height: 23px;" class="icon"><img src="img/list3.png"></img></div>我的奖金</div>
+			                    <img src="./img/myjt.png" alt=""/>
+			                </div>
+			            </div>
+			             <div class="li" >
+			                <div class="a">
+			                    <div class="span"><div style="height: 23px;" class="icon"><img src="img/list4.png"></img></div>收货地址</div>
+			                    <img src="./img/myjt.png" alt=""/>
+			                </div>
+			            </div>
+			             <div class="li" >
+			                <div class="a">
+			                    <div class="span"><div style="height: 23px;" class="icon"><img src="img/list5.png"></img></div>修改个人信息</div>
+			                    <img src="./img/myjt.png" alt=""/>
+			                </div>
+			            </div>
+			             <div class="li" >
+			                <div class="a">
+			                    <div class="span"><div style="height: 23px;" class="icon"><img src="img/list6.png"></img></div>客服电话</div>
+			                    <img src="./img/myjt.png" alt=""/>
+			                </div>
+			            </div>
+			        </div>
+			   	</div>
+			   	<div class="tab_div">
+			   		<div class="team">
+			   			<p>我的团队（人）</p>
+			   			<p>67</p>
+			   			<a href="###">查看详情></a>
+			   		</div>
+			   		<div class="team">
+			   			<p>加盟商订单（笔）</p>
+			   			<p>67</p>
+			   			<a href="###">查看详情></a>
+			   		</div>
+			   	</div>
+			</div>
+		</div>
+		<div class="erweima_model">
+			<div class="model_detail">
+				<div class="img"><img src="img/user_img.png" align="center"></div>
+				<img src="img/barcode.png" class="erweima_img">
+				<p>扫描二维码，和我一起来购物！</p>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="ul">
+				<div class="li active" >
+					<a href="index.html">
+					<div  class="iconfont icon-home"></div>
+						首页</a>
+				</div>
+				<div class="li">
+					<a href="menu.html">
+					<div  class="iconfont icon-home"></div>
+					分类	</a>
+				</div>
+				<div class="li">
+					<a href="cart.html">
+					<div  class="iconfont icon-home"></div>
+						购物车</a>
+				</div>
+				<div class="li">
+					<a href="user.html">
+					<div  class="mui-icon mui-icon-contact"></div>
+						个人中心</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
