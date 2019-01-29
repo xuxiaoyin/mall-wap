@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>我的购物券</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/theme.css"/>
+	<link rel="stylesheet" type="text/css" href="css/font.css"/>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js" ></script>
+	<script type="text/javascript" src="js/tab.js" ></script>
+</head>
+<script>
+	var html = document.getElementsByTagName('html')[0];
+	var pageWidth = html.getBoundingClientRect().width;
+	pageWidth = pageWidth > 750 ? 750 : pageWidth;
+	html.style.fontSize = pageWidth / 15 + 'px';
+</script>
+	
+<body>
+	<div class="main">
+		<div class="my-score">
+			<div class="switch">
+				<span class="on">我的购物券</span>
+				<span class="normal">购物券记录</span>
+			</div>
+			<div class="switch-wrap">
+				<div class="card-info">
+	      			<p>我的购物券:100.00</p>
+	      		</div>
+	      		<div class="sure-btn">
+	        		<input type="button" value="出售" class="btn sell-score">
+	        		<input type="button" value="转赠" class="btn give-score">
+	      		</div>
+			</div>
+			
+			<div class="switch-wrap">
+				<ul class="score-list">
+					<li class="list">
+						<div class="right1">剩余积分：100.00</div>
+						<div class="info text-blue">购物时获得积分：+100.00积分</div>
+						<div class="right1">2018-12-12 10:08:32</div>
+					</li>
+					<li class="list">
+						<div class="right1">剩余积分：100.00</div>
+						<div class="info text-red">转赠他人积分：-50.00积分</div>
+						<div class="right1">2018-12-12 10:08:32</div>
+					</li>
+					<li class="list">
+						<div class="right1">剩余积分：100.00</div>
+						<div class="info text-blue">推荐直属下级获得积分：+100.00积分</div>
+						<div class="right1">2018-12-12 10:08:32</div>
+					</li>
+					<li class="list">
+						<div class="right1">剩余积分：100.00</div>
+						<div class="info text-red">出售积分：-50.00积分</div>
+						<div class="right1">2018-12-12 10:08:32</div>
+					</li>
+				</ul>
+			</div>
+	      
+		</div>
+		<div class="footer-bar">
+			<div class="item"><span class="iconfont icon-home"></span>首页</div>
+			<div class="item"><span class="iconfont icon-caidan"></span>分类</div>
+			<div class="item"><span class="iconfont icon-gouwucheman"></span>购物车</div>
+			<div class="item active"><span class="iconfont icon-wode"></span>个人中心</div>
+		</div>
+	</div>
+	
+	<div class="mark-layer" style="display: none;">
+		<div class="popup sell-score">
+			<div class="info">
+				<ul class="list">
+					<li class="item clearfix">
+						<span class="name left">出售购物券：</span>
+						<input type="text" class="inp left" placeholder="请输入出售购物券"/>
+					</li>
+				</ul>
+			</div>
+			<div class="sure-btn">
+				<input type="button" value="确认"  class="btn sure-sell"/>
+				<input type="button" value="取消" class="btn sure-nosell"/>
+			</div>
+		</div>
+		
+		<div class="popup give-score">
+			<div class="info">
+				<ul class="list">
+					<li class="item clearfix">
+						<span class="name left">转赠好友：</span>
+						<input type="text" class="inp left" placeholder="请输入好友ID"/>
+					</li>
+					<li class="item clearfix">
+						<span class="name left">转赠购物券：</span>
+						<input type="text" class="inp left" placeholder="请输入转赠金额"/>
+					</li>
+				</ul>
+			</div>
+			<div class="sure-btn">
+				<input type="button" value="确认"  class="btn sure-give"/>
+				<input type="button" value="取消" class="btn sure-nogive"/>
+			</div>
+		</div>
+		
+		<div class="popup sure-give">
+			<div class="info">
+				<p class="info-list">是否要将10.00购物券转赠给某某某？</p>
+			</div>
+			<div class="sure-btn">
+				<input type="button" value="确认"  class="btn btn-yes"/>
+				<input type="button" value="取消" class="btn btn-no"/>
+			</div>
+		</div>
+		
+		<div class="popup sure-sell">
+			<div class="info">
+				<p class="info-list">是否要将10.00购物券出售？</p>
+			</div>
+			<div class="sure-btn">
+				<input type="button" value="确认"  class="btn btn-yes"/>
+				<input type="button" value="取消" class="btn btn-no"/>
+			</div>
+		</div>
+		
+	</div>
+</body>
+
+
+</html>
