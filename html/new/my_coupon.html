@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="div port" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+		<meta name="misapplication-tap-highlight" content="no"/>
+		<meta name="HandheldFriendly" content="true"/>
+		<meta name="MobileOptimized" content="320"/>
+		<title>商城</title>
+		<script src="js/mui.min.js"></script>
+    	<script src="js/jquery.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/my_coupon.css"/>
+		<link rel="stylesheet" type="text/css" href="css/font.css"/>
+		<script type="text/javascript" src="js/update.js"></script>
+		<!-- <script type="text/javascript" src="js/common.js"></script> -->
+	</head>
+	<script type="text/javascript">
+		$(function () {
+			$('.tab .li').click(function(){
+				let index = $(this).index();
+				$('.tab .li').eq(index).addClass('active').siblings().removeClass('active');
+				$('.tab_div').eq(index).addClass('tab_active').siblings().removeClass('tab_active');
+
+			})
+			
+		})
+	</script>
+	<body>
+		<div class="tab">
+			<div class="li active" >我的购物券</div>
+			<div class="li">购物券记录</div>
+		</div>
+		<div class="tab_div tab_active">
+			<ul class="one">
+				<li>
+					<p>我的购物券:100.00</p>
+					<div class="btn">
+						<button>出售</button>
+						<button>转赠</button>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="tab_div">
+			<ul class="two">
+				<li>
+					<div class="shengyu">剩余购物券：100.00</div>
+					<div class="chongzhi red">购物券充值：+100.00购物券</div>
+					<div class="time">2018-12-12 10:08:32</div>
+				</li>
+				<li>
+					<div class="shengyu">剩余购物券：100.00</div>
+					<div class="chongzhi red">购物券充值：+100.00购物券</div>
+					<div class="time">2018-12-12 10:08:32</div>
+				</li>
+				<li>
+					<div class="shengyu">剩余购物券：100.00</div>
+					<div class="chongzhi red">购物券充值：+100.00购物券</div>
+					<div class="time">2018-12-12 10:08:32</div>
+				</li><li>
+					<div class="shengyu">剩余购物券：100.00</div>
+					<div class="chongzhi red">购物券充值：+100.00购物券</div>
+					<div class="time">2018-12-12 10:08:32</div>
+				</li>
+			</ul>
+		</div>
+
+		
+	</body>
+</html>

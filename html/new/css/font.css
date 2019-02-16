@@ -11,31 +11,24 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-/*购物车*/
-.icon-gouwucheman:before {  
+.icon-gouwucheman:before {
   content: "\e600"; }
 
-/*播放*/
 .icon-bofang:before {
   content: "\e613"; }
 
-/*减*/
 .icon-jian:before {
   content: "\e643"; }
 
-/*首页*/
 .icon-home:before {
   content: "\e609"; }
 
-/*我的*/
 .icon-wode:before {
   content: "\e718"; }
 
-/*加*/
 .icon-jia:before {
   content: "\e644"; }
 
-/*菜单*/
 .icon-caidan:before {
   content: "\e63c"; }
 

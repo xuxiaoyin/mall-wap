@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>购物车</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/theme.css"/>
+	<link rel="stylesheet" type="text/css" href="css/font.css"/>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js" ></script>
+	<script type="text/javascript" src="js/tab.js" ></script>
+</head>
+<script>
+	var html = document.getElementsByTagName('html')[0];
+	var pageWidth = html.getBoundingClientRect().width;
+	pageWidth = pageWidth > 750 ? 750 : pageWidth;
+	html.style.fontSize = pageWidth / 15 + 'px';
+</script>
+	
+<body>
+	<div class="main">
+		<div class="shopping-crat">
+			<div class="mall">
+				<div class="ad-top">
+					<img src="images/ad1.jpg" />
+				</div>
+				<ul class="cart-list">
+					<li class="list">
+						<div class="goods-pic">
+							<img src="images/product-1.png" />
+						</div>
+						<div class="goods-info">
+							<div class="name">可口可乐</div>
+							<div class="num">
+								<span class="title">数量：</span>
+								<span class="operate">
+									<a href="javascript:" class="decrease">-</a>
+									<span class="number">1</span>
+									<a href="javascript:" class="add">+</a>
+								</span>
+							</div>
+							<div class="price text-red">￥2.50</div>
+						</div>
+					</li>
+					<li class="list">
+						<div class="goods-pic">
+							<img src="images/product-1.png" />
+						</div>
+						<div class="goods-info">
+							<div class="name">可口可乐</div>
+							<div class="num">
+								<span class="title">数量：</span>
+								<span class="operate">
+									<a href="javascript:" class="decrease">-</a>
+									<span class="number">1</span>
+									<a href="javascript:" class="add">+</a>
+								</span>
+							</div>
+							<div class="price text-red">￥2.50</div>
+						</div>
+					</li>
+					<li class="list">
+						<div class="goods-pic">
+							<img src="images/product-1.png" />
+						</div>
+						<div class="goods-info">
+							<div class="name">可口可乐</div>
+							<div class="num">
+								<span class="title">数量：</span>
+								<span class="operate">
+									<a href="javascript:" class="decrease">-</a>
+									<span class="number">1</span>
+									<a href="javascript:" class="add">+</a>
+								</span>
+							</div>
+							<div class="price text-red">￥2.50</div>
+						</div>
+					</li>
+					<li class="list">
+						<div class="goods-pic">
+							<img src="images/product-1.png" />
+						</div>
+						<div class="goods-info">
+							<div class="name">可口可乐</div>
+							<div class="num">
+								<span class="title">数量：</span>
+								<span class="operate">
+									<a href="javascript:" class="decrease">-</a>
+									<span class="number">1</span>
+									<a href="javascript:" class="add">+</a>
+								</span>
+							</div>
+							<div class="price text-red">￥2.50</div>
+						</div>
+					</li>
+					<li class="list">
+						<div class="goods-pic">
+							<img src="images/product-1.png" />
+						</div>
+						<div class="goods-info">
+							<div class="name">可口可乐</div>
+							<div class="num">
+								<span class="title">数量：</span>
+								<span class="operate">
+									<a href="javascript:" class="decrease">-</a>
+									<span class="number">1</span>
+									<a href="javascript:" class="add">+</a>
+								</span>
+							</div>
+							<div class="price text-red">￥2.50</div>
+						</div>
+					</li>
+				</ul>
+				<div class="ad-wrap">
+					<img src="images/ad.jpg" />
+				</div>
+			</div>
+		</div>
+		
+		<div class="mini-sum">
+			<div class="cart">
+				<img src="images/cart.png" />
+				<span class="num">1</span>
+			</div>
+			<div class="price-info">
+				合计：<span class="text-red">￥2.50</span>
+			</div>
+			<div class="accounts-btn">
+				<a href="accounts.html" class="btn">幸运免单</a>
+			</div>
+		</div>
+		
+	</div>
+	
+<script type="text/javascript">
+	var height=$(window).height()
+	var _heigth=$(".mini-sum").height()
+	$(".mall").css('min-height',height-_heigth)
+</script>	
+	
+</body>
+
+
+</html>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>免单</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/theme.css"/>
+	<link rel="stylesheet" type="text/css" href="css/font.css"/>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js" ></script>
+	<script type="text/javascript" src="js/tab.js" ></script>
+</head>
+<script>
+	var html = document.getElementsByTagName('html')[0];
+	var pageWidth = html.getBoundingClientRect().width;
+	pageWidth = pageWidth > 750 ? 750 : pageWidth;
+	html.style.fontSize = pageWidth / 15 + 'px';
+</script>
+	
+<body>
+	<div class="accounts-bg">
+		<img src="images/miandan.jpg" />
+	</div>
+	
+	<div class="main accounts">
+		<div class="return-btn">
+			<a href="javascript:" class="btn"><返回</a>
+		</div>
+		
+		<div class="accounts-wrap">
+			<div class="percent-wrap">
+				<div class="text">本次免单概率</div>
+				<div class="percent">25%<a href="help.html" class="help"></a></div>
+			</div>
+			<ul class="accounts-list">
+				<li class="list">
+					<div class="pic">
+						<img src="images/cart.png" />
+						<div class="price">总价：￥2.50</div>
+					</div>
+					<div class="info clearfix">
+						<div class="left">可口可乐</div>
+						<div class="right">x1</div>
+					</div>
+				</li>
+			</ul>
+			<div class="card-wrap">
+				<div class="title">请选择要使用的免单券：</div>
+				<div class="card-btn">
+					<a href="javascript:" class="btn active left">1元券</a>
+					<a href="javascript:" class="btn right">3元券</a>
+				</div>
+			</div>
+			<div class="accounts-btn">
+				<div class="btn-wrap">
+					<a href="free.html" class="btn left">试试免单</a>
+					<a href="#" class="btn right">取消</a>
+				</div>
+				<div class="article-user">
+					<input id="color-input-red" class="chat-button-location-radio-input" type="checkbox" name="color-input-red" value="#f0544d" />
+					<label  for="color-input-red"></label >
+					<a href="article-user.html">我已阅读并同意《用户条款》  </a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+</body>
+
+
+</html>

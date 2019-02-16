@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>我的二维码</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/theme.css"/>
+	<link rel="stylesheet" type="text/css" href="css/font.css"/>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js" ></script>
+	<script type="text/javascript" src="js/tab.js" ></script>
+</head>
+<script>
+	var html = document.getElementsByTagName('html')[0];
+	var pageWidth = html.getBoundingClientRect().width;
+	pageWidth = pageWidth > 750 ? 750 : pageWidth;
+	html.style.fontSize = pageWidth / 15 + 'px';
+</script>
+	
+<body>
+	<div class="main">
+		<div class="my-code">
+			<div class="code-wrap">
+				<div class="top">
+					<div class="user-pic">
+						<img src="images/user_img.png"/>
+					</div>
+					<div class="text-info">
+						<p>宋书航</p>
+						<p>ID：001</p>
+						<p>会员身份：代理商</p>
+					</div>
+				</div>
+				<div class="code">
+					<img src="images/code.png" />
+					<p>扫一扫上面的二维码，申请注册</p>
+				</div>
+			</div>
+			<div class="sure-btn-one sure-btn">
+				<input type="button" class="btn" value="返回" />
+			</div>
+		</div>	
+	</div>
+	
+	
+</body>
+
+
+</html>

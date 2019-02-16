@@ -53,7 +53,7 @@ body {
 .chechbtn .btn {
 	background: none;
 	outline: none;
-	border: 1px solid #cbcaca;
+	border: 0.02rem solid #cbcaca;
 	padding: 0 0.68rem;
 	border-radius: 0.16rem;
 	height: 1.12rem;
@@ -80,6 +80,54 @@ body {
 	color: #fff;
 	font-size: 0.6rem;
 	border-radius: 0.16rem;
+	text-align: center;
+}
+.search-btn {
+	padding: 0 0.4rem;
+	height: 1rem;
+	line-height: 0.96rem;
+	border-radius: 0.2rem;
+	background: none;
+	border: none;
+	outline: none;
+	border: 0.02rem solid #ee1d89;
+	color: #ee1d89;
+}
+.active-btn{
+	background: #ee1d89;
+	color: #fff;
+}
+.big-btn {
+	width: 6rem;
+	margin: 0 auto;
+	text-align: center;
+}
+.big-btn .btn{
+	display: block;
+	width: 100%;
+	height: 1.44rem;
+	line-height: 1.44rem;
+	font-size: 0.56rem;
+	border-radius: 0.16rem;
+	background: #ee1d89;
+	color: #fff;
+	margin-bottom: 0.32rem;
+}
+.return-btn{
+	width: 1.96rem;
+	height: 0.96rem;
+	margin: 0.34rem 0;
+}
+.return-btn .btn{
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	line-height: 0.96rem;
+	background: #f8b551;
+	color: #9d0214;
+	border-radius: 0.16rem;
+	font-size: 0.56rem;
 }
 .splice {
 	width: 100%;
@@ -88,7 +136,7 @@ body {
 }
 .splice-f {
 	width: 100%;
-	height: 1px;
+	height: 0.02rem;
 	background: #fff;
 }
 
@@ -113,10 +161,52 @@ body {
 	color: #fff;
 	font-size: 0.72rem;
 }
+.btn-normal{
+	border: none;
+	background: #fff;
+	height: 100%;
+	padding: 0 0.52rem;
+	border-radius: 0.16rem;
+}
+.card-btn{
+	height: 1.2rem;
+	width: 8.32rem;
+	margin: 0.4rem auto 2.24rem auto;
+}
+.card-btn .btn{
+	height: 100%;
+	line-height: 1.2rem;
+	width: 3.2rem;
+	text-align: center;
+	border-radius: 0.4rem;
+	border: 1px solid #bd1829;
+	background: #f7daad;
+	color: #bd1829 !important;
+}
+.card-btn .active{
+	background: #f8b551;
+}
+.accounts-btn{
+	width: 9.12rem;
+	margin: 0 auto;
+}
+.accounts-btn .btn-wrap{
+	height: 1.44rem;
+	line-height: 1.44rem;
+}
+.accounts-btn .btn-wrap .btn{
+	width: 4rem;
+	height: 100%;
+	background: #bd1829;
+	color: #fff;
+	border-radius: 0.16rem;
+	text-align: center;
+	font-size: 0.56rem;
+}
 .file {
 	width: 2.9rem;
 	height: 2.9rem;
-	border: 1px solid #ccc;
+	border: 0.02rem solid #ccc;
 	border: 0.5px solid #ccc;
 	text-align: center;
 }
@@ -153,4 +243,78 @@ body {
 	background: #ee1d89;
 	color: #fff;
 }
+.add-btn {
+	width: 3.96rem;
+	height: 3.96rem;
+	background: #fff;
+	margin: 1.84rem auto 1rem auto;
+	border-radius: 0.32rem;
+	text-align: center;
+}
+.add-btn .add {
+	font-size: 1.6rem;
+	line-height: 0.8rem;
+	padding-top: 1.16rem;
+}
+.add-btn .text {
+	line-height: 1.2rem;
+	font-size: 0.52rem;
+}
+.free-btn{
+	height: 4.24rem;
+	width: 4.24rem;
+	margin: 4.6rem auto 0 auto;
+	border-radius: 50%;
+	background: #bd1829;
+	border: 0.48rem solid #bd3946;
+	text-align: center;
+}
+.free-btn .btn{
+	display: block;
+	padding: 0.96rem;
+	color: #e4bb79;
+	font-size: 1.12rem;
+	line-height: 1.2rem;
+}
+.white-btn{
+	height: 0.72rem;
+	margin-top: 0.2rem;
+	line-height: 0.72rem;
+	text-align: center;
+}
+.white-btn .btn{
+	width: 1.6rem;
+	height: 100%;
+	background: #fff;
+	color: #ee1d89;
+	font-size: 0.4rem;
+	border: 1px solid #ee1d89;
+	border-radius: 0.16rem;
+}
+#color-input-red +label{
+    display: block;
+    width: 0.6rem;
+    height: 0.6rem;
+    cursor: pointer;
+    position: absolute;
+    top: 0.12rem;
+    left: 0.64rem;
+    background: #bd1829;
+    border-radius: 0.08rem;
+}
 
+#color-input-red:checked +label::before{
+	display: block;
+    content: "\2714";
+	width: 0.6rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    text-align: center;
+    font-size: 0.32rem;
+    color: white;
+}
+
+
+#color-input-red{
+	visibility: hidden;
+}

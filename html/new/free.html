@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>免单转盘</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/theme.css"/>
+	<link rel="stylesheet" type="text/css" href="css/font.css"/>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js" ></script>
+	<script type="text/javascript" src="js/tab.js" ></script>
+</head>
+<script>
+	var html = document.getElementsByTagName('html')[0];
+	var pageWidth = html.getBoundingClientRect().width;
+	pageWidth = pageWidth > 750 ? 750 : pageWidth;
+	html.style.fontSize = pageWidth / 15 + 'px';
+</script>
+	
+<body>
+	<div class="accounts-bg">
+		<img src="images/miandan.jpg" />
+	</div>
+	
+	<div class="main accounts">
+		<div class="return-btn">
+			<a href="javascript:" class="btn"><返回</a>
+		</div>
+		
+		<div class="accounts-wrap">
+			<div class="percent-wrap">
+				<div class="text">本次免单概率</div>
+				<div class="percent">25%<a href="help.html" class="help"></a></div>
+			</div>
+			
+			<div class="free-btn">
+				<a href="javascript:" class="btn" id="start">开始抽奖</a>
+			</div>
+			
+		</div>
+	</div>
+
+	<div class="mark-layer" style="display: none;">	
+		<div class="popup no-money">
+			<div class="info">
+				<p class="info-list" style="line-height: 4rem; font-size: 0.64rem; border-bottom: 0.02rem solid #c8c8c8;">恭喜您获得免单！</p>
+			</div>
+			<div class="sure-btn sure-btn-one">
+				<input type="button" value="确认" style="color: #db0019; background: none; width: 100%; font-size: 0.64rem;"  class="btn back sure"/>
+			</div>
+		</div>
+		
+	</div>
+</body>
+
+<script type="text/javascript">
+	$("#start").click(function(){
+		$(".mark-layer").css("display","block");
+		$(".sure").click(function(){
+			$(".mark-layer").css("display","none");
+		})
+	})
+	
+</script>
+
+</html>

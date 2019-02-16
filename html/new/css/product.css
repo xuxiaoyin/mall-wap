@@ -1,0 +1,242 @@
+div {
+  overflow: visible; }
+
+.wrap {
+  padding-bottom: 110px; }
+
+
+
+.swiper-container .dots {
+  bottom: -15px; }
+
+.swiper-container .dots .dot {
+  background: rgba(0, 0, 0, 0.5); }
+
+.productInfo {
+  margin-top: 38px;
+  padding: 0 5%;
+  padding-bottom: 20px; }
+  .productInfo .title {
+    font-weight: 600;
+    font-size: 16px; }
+  .productInfo .num {
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0 15px 0; }
+    .productInfo .num .money {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 600;
+      font-size: 16px;
+      color: #ff4171; }
+    .productInfo .num .save {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 20px; }
+      .productInfo .num .save .saves {
+        font-size: 11px;
+        color: #cccccc; }
+    .productInfo .num .quantity {
+      display: flex;
+      font-size: 14px;
+      color: #777777; }
+      .productInfo .num .quantity .quantityNum {
+        color: #ff4171; }
+  .productInfo .desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .productInfo .desc .txt {
+      font-size: 15px;
+      color: #777777; }
+    .productInfo .desc .i {
+      margin-bottom: 7px; }
+      .productInfo .desc .i image {
+        width: 27px;
+        height: 7px; }
+
+.swiper-tab {
+  border-top: 2px solid #eeeeee;
+  width: 100%;
+  border-bottom: 2px solid #eeeeee;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 80px; }
+
+.swiper-tab-item {
+  font-size: 15px;
+  width: 50%;
+  color: #666666;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.on {
+  color: #ff4171; }
+
+.swiper-box {
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; }
+
+.footer {
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #fff; }
+  .footer .home img {
+    width: 25px;
+    height: 23px; }
+  .footer .buy {
+    color: #ffffff;
+    background: #ff4171;
+    text-align: center;
+    font-size: 16px;
+    width: 60%;
+    padding: 10px 0;
+    margin: 0 1%;
+    border-radius: 5px; }
+  .footer .buyCar {
+    display: flex;
+    align-items: center;	
+    padding: 0 10px;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 12px; }
+    .footer .buyCar img {
+      width: 25px;
+      height: 23px; 
+      margin-bottom: 6px; }
+
+.html-view {
+  justify-content: flex-start;
+  align-items: flex-start; }
+  .html-view .ChannelContent {
+    text-align: left;
+    padding: 0 2%; }
+
+.seckill {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column; }
+  .seckill > .title {
+    font-size: 15px;
+    color: #ff4171;
+    margin-bottom: 10px;
+    font-weight: normal;
+    margin-left: 6px; }
+  .seckill .time {
+    color: #ff4171;
+    display: flex;
+    align-items: center; }
+    .seckill .time .block {
+      background: #ff4171;
+      color: #ffffff;
+      padding: 14px 10px;
+      border-radius: 10px;
+      font-size: 13px;
+      margin: 0 4px; }
+
+.seckillMoney {
+  color: #a2a2a2;
+  font-weight: normal;
+  font-size: 12px; }
+
+.wxParse-img {
+  width: 100% !important; }
+
+.seckillState {
+  display: flex;
+  justify-content: space-between; }
+  .seckillState .oneMoney {
+    background: #ff4171;
+    width: 60%;
+    padding: 20px; }
+    .seckillState .oneMoney .s1 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .seckillState .oneMoney .s1 .money {
+        display: flex;
+        align-items: flex-end;
+        color: #ffffff;
+        font-size: 29px; }
+        .seckillState .oneMoney .s1 .money .span {
+          font-size: 22px;
+          position: relative;
+          top: -6px; }
+      .seckillState .oneMoney .s1 .msMoney {
+        font-size: 16px;
+        color: #ffffff;
+        text-decoration: line-through; }
+    .seckillState .oneMoney .s2 {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      .seckillState .oneMoney .s2 .left {
+        width: 100%; }
+      .seckillState .oneMoney .s2 .shengyu {
+        font-size: 12px;
+        color: #ffffff; }
+  .seckillState .seckill {
+    background: #ffc8bb;
+    justify-content: center;
+    align-items: center;
+    flex: 1; }
+
+.percent {
+  height: 32px;
+  border-radius: 20px;
+  width: 60%;
+  background: #fff;
+  position: relative;
+  display: flex; }
+  .percent .left {
+    width: 80%;
+    border-right: none;
+    position: relative; }
+    .percent .left .bg {
+      background: #ffc8bb;
+      width: 70%;
+      position: absolute;
+      height: 100%;
+      border-radius: 20px; }
+    .percent .left .txt {
+      position: relative;
+      z-index: 999;
+      color: #6e6e6e;
+      text-align: center;
+      font-size: 10px;
+      height: 100%;
+      line-height: 32px; }
+  .percent .btn {
+    width: 20%;
+    border-radius: 4px;
+    color: #ffffff;
+    background: #ff4171;
+    padding: 8px 0;
+    text-align: center;
+    font-size: 11px;
+    -webkit-border-top-left-radius: 0;
+    -webkit-border-bottom-left-radius: 0; }
+  .percent .time {
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; }
+    .percent .time .span {
+      margin-right: 40px; }
+
+/*# sourceMappingURL=product.wxss.map */

@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>数据统计</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/theme.css"/>
+	<link rel="stylesheet" type="text/css" href="css/font.css"/>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js" ></script>
+	<script type="text/javascript" src="js/tab.js" ></script>
+</head>
+<script>
+	var html = document.getElementsByTagName('html')[0];
+	var pageWidth = html.getBoundingClientRect().width;
+	pageWidth = pageWidth > 750 ? 750 : pageWidth;
+	html.style.fontSize = pageWidth / 15 + 'px';
+</script>
+	
+<body>
+	<div class="main">
+		<div class="my-data">
+			<div class="option">
+				<div class="search-wrap">
+					<div class="select-wrap">
+						<div class="relative">
+							<select>
+								<option>2019</option>
+								<option>2018</option>
+								<option>2017</option>
+							</select>
+							<span class="sanjiao"></span>
+						</div>
+						<span>年</span>
+						
+					</div>
+					<div class="select-wrap">
+						<div class="relative">
+							<select>
+								<option>1</option>
+								<option>2</option>
+								<option>3</option>
+							</select>
+							<span class="sanjiao"></span>
+						</div>
+						<span>月</span>						
+					</div>
+					<div class="select-wrap">
+						<div class="relative">
+							<select>
+								<option>免单</option>
+								<option>未免单</option>
+							</select>
+							<span class="sanjiao"></span>
+						</div>				
+					</div>
+					<button class="search-btn">搜索</button>
+				</div>
+			</div>
+			
+			<div class="data-list">
+				<div class="list-detail data-count-list">
+					<p>销售额(元)：120.50</p>
+					<p>销售量(件)：52</p>
+				</div>
+				<div class="list-detail data-count-list">
+					<p><span class="name text-theme">免单金额</span><span class="time text-theme" style="padding-right: 0.8rem;">时间</span></p>
+					<p><span class="name">200.00元</span><span class="time">2018-12-19</span></p>
+					<p><span class="name">200.00元</span><span class="time">2018-12-19</span></p>
+				</div>
+				
+				<div class="list-detail">
+					<div class="sum clearfix">
+						<div class="left">
+							免单合计：<span class="text-red">200.00</span>元
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+	
+</body>
+
+
+</html>

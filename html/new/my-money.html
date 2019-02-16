@@ -7,6 +7,8 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
 	<link rel="stylesheet" type="text/css" href="css/theme.css"/>
 	<link rel="stylesheet" type="text/css" href="css/font.css"/>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js" ></script>
+	<script type="text/javascript" src="js/tab.js" ></script>
 </head>
 <script>
 	var html = document.getElementsByTagName('html')[0];
@@ -22,28 +24,44 @@
 				<span class="normal">我的余额</span>
 				<span class="on">余额记录</span>
 			</div>
-			<ul class="score-list">
-				<li class="list">
-					<div class="right1">剩余余额：100.00</div>
-					<div class="info text-blue">奖金提现：+100.00余额</div>
-					<div class="right1">2018-12-12 10:08:32</div>
-				</li>
-				<li class="list">
-					<div class="right1">剩余余额：100.00</div>
-					<div class="info text-red">购物消费：-50.00余额</div>
-					<div class="right1">2018-12-12 10:08:32</div>
-				</li>
-				<li class="list">
-					<div class="right1">剩余余额：100.00</div>
-					<div class="info text-blue">奖金提现：+100.00余额</div>
-					<div class="right1">2018-12-12 10:08:32</div>
-				</li>
-				<li class="list">
-					<div class="right1">剩余余额：100.00</div>
-					<div class="info text-red">购物消费：-50.00余额</div>
-					<div class="right1">2018-12-12 10:08:32</div>
-				</li>
-			</ul>
+			
+			<div class="switch-wrap">
+				<div class="card-info">
+		      		<p>我的余额:<span id="myMoney">100.00</span></p>
+		      	</div>
+		      	<div class="sure-btn sure-btn-one">
+		        	<input type="button" value="提现" class="btn sell-score">
+		      	</div>
+		      	<div class="card-tips">
+		      		<p class="tips-list">已被冻结余额：50.00</p>
+		      		<p class="tips-list">（被冻结余额无法提现）</p>
+		      	</div>
+			</div>
+			
+			<div class="switch-wrap">
+				<ul class="score-list">
+					<li class="list">
+						<div class="right1">剩余余额：100.00</div>
+						<div class="info text-blue">奖金提现：+100.00余额</div>
+						<div class="right1">2018-12-12 10:08:32</div>
+					</li>
+					<li class="list">
+						<div class="right1">剩余余额：100.00</div>
+						<div class="info text-red">购物消费：-50.00余额</div>
+						<div class="right1">2018-12-12 10:08:32</div>
+					</li>
+					<li class="list">
+						<div class="right1">剩余余额：100.00</div>
+						<div class="info text-blue">奖金提现：+100.00余额</div>
+						<div class="right1">2018-12-12 10:08:32</div>
+					</li>
+					<li class="list">
+						<div class="right1">剩余余额：100.00</div>
+						<div class="info text-red">购物消费：-50.00余额</div>
+						<div class="right1">2018-12-12 10:08:32</div>
+					</li>
+				</ul>
+			</div>
 		</div>
 		<div class="footer-bar">
 			<div class="item"><span class="iconfont icon-home"></span>首页</div>
@@ -51,6 +69,33 @@
 			<div class="item"><span class="iconfont icon-gouwucheman"></span>购物车</div>
 			<div class="item active"><span class="iconfont icon-wode"></span>个人中心</div>
 		</div>
+	</div>
+	
+	<div class="mark-layer" style="display: none;">
+		<div class="popup sell-score">
+			<div class="info">
+				<ul class="list">
+					<li class="item clearfix">
+						<span class="name left">提现金额：</span>
+						<input type="text" class="inp left sub-money" placeholder="请输入提现金额" required="required"/>
+					</li>
+				</ul>
+			</div>
+			<div class="sure-btn">
+				<input type="button" value="确认"  class="btn sure-subbmit"/>
+				<input type="button" value="取消" class="btn sure-nosell"/>
+			</div>
+		</div>
+		
+		<div class="popup no-money">
+			<div class="info">
+				<p class="info-list">您的余额不足！</p>
+			</div>
+			<div class="sure-btn sure-btn-one">
+				<input type="button" value="返回"  class="btn back"/>
+			</div>
+		</div>
+		
 	</div>
 </body>
 

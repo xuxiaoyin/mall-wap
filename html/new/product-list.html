@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>商品管理</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/theme.css"/>
+	<link rel="stylesheet" type="text/css" href="css/font.css"/>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js" ></script>
+	<script type="text/javascript" src="js/tab.js" ></script>
+</head>
+<script>
+	var html = document.getElementsByTagName('html')[0];
+	var pageWidth = html.getBoundingClientRect().width;
+	pageWidth = pageWidth > 750 ? 750 : pageWidth;
+	html.style.fontSize = pageWidth / 15 + 'px';
+</script>
+	
+<body>
+	<div class="main">
+		<div class="my-data my-city">
+			<div class="option option1">
+				<div class="search-wrap search-wrap1">
+					<div class="select-wrap left">
+						<div class="relative">
+							<select>
+								<option>请选择分类</option>
+								<option>商家1</option>
+								<option>商家2</option>
+							</select>
+							<span class="sanjiao"></span>
+						</div>				
+					</div>
+					<div class="select-wrap right">
+						<div class="relative">
+							<select>
+								<option>已上架</option>
+								<option>已下架</option>
+							</select>
+							<span class="sanjiao"></span>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+			<div class="search-wrap">
+				<input type="text" placeholder="请输入关键词" class="inp left" />
+				<input type="button" value="搜索" class="btn-normal right" />
+			</div>
+			
+			<div class="city-list clearfix">
+				<div class="list-detail">
+					<div class="pic">
+						<img src="images/product1.jpg" />
+					</div>
+					<div class="name">统一老坛酸菜面</div>
+					<div class="price text-red">￥4.00</div>
+					<div class="white-btn">
+						<a href="javascript:" class="btn left">下架</a>
+						<a href="javascript:" class="btn right">确认</a>
+					</div>
+				</div>
+				
+				<div class="list-detail">
+					<div class="pic">
+						<img src="images/product2.jpg" />
+					</div>
+					<div class="name">统一老坛酸菜面</div>
+					<div class="price text-red">￥4.00</div>
+					<div class="white-btn">
+						<a href="javascript:" class="btn left">下架</a>
+						<a href="javascript:" class="btn right">确认</a>
+					</div>
+				</div>
+				
+				<div class="list-detail">
+					<div class="pic">
+						<img src="images/product3.jpg" />
+					</div>
+					<div class="name">统一老坛酸菜面</div>
+					<div class="price text-red">￥4.00</div>
+					<div class="white-btn">
+						<a href="javascript:" class="btn left">下架</a>
+						<a href="javascript:" class="btn right">确认</a>
+					</div>
+				</div>
+				
+				<div class="list-detail">
+					<div class="pic">
+						<img src="images/product4.jpg" />
+					</div>
+					<div class="name">统一老坛酸菜面</div>
+					<div class="price text-red">￥4.00</div>
+					<div class="white-btn">
+						<a href="javascript:" class="btn left">下架</a>
+						<a href="javascript:" class="btn right">确认</a>
+					</div>
+				</div>
+				
+				<div class="list-detail">
+					<div class="pic">
+						<img src="images/product1.jpg" />
+					</div>
+					<div class="name">统一老坛酸菜面</div>
+					<div class="price text-red">￥4.00</div>
+					<div class="white-btn">
+						<a href="javascript:" class="btn left">下架</a>
+						<a href="javascript:" class="btn right">确认</a>
+					</div>
+				</div>
+				
+				<div class="list-detail">
+					<div class="pic">
+						<img src="images/product2.jpg" />
+					</div>
+					<div class="name">统一老坛酸菜面</div>
+					<div class="price text-red">￥4.00</div>
+					<div class="white-btn">
+						<a href="javascript:" class="btn left">下架</a>
+						<a href="javascript:" class="btn right">确认</a>
+					</div>
+				</div>
+				
+				<div class="list-detail">
+					<div class="pic">
+						<img src="images/product3.jpg" />
+					</div>
+					<div class="name">统一老坛酸菜面</div>
+					<div class="price text-red">￥4.00</div>
+					<div class="white-btn">
+						<a href="javascript:" class="btn left">下架</a>
+						<a href="javascript:" class="btn right">确认</a>
+					</div>
+				</div>
+				
+				<div class="list-detail">
+					<div class="pic">
+						<img src="images/product4.jpg" />
+					</div>
+					<div class="name">统一老坛酸菜面</div>
+					<div class="price text-red">￥4.00</div>
+					<div class="white-btn">
+						<a href="javascript:" class="btn left">下架</a>
+						<a href="javascript:" class="btn right">确认</a>
+					</div>
+				</div>
+				
+				<div class="list-detail">
+					<div class="pic">
+						<img src="images/product1.jpg" />
+					</div>
+					<div class="name">统一老坛酸菜面</div>
+					<div class="price text-red">￥4.00</div>
+					<div class="white-btn">
+						<a href="javascript:" class="btn left">下架</a>
+						<a href="javascript:" class="btn right">确认</a>
+					</div>
+				</div>
+				
+				<div class="list-detail">
+					<div class="pic">
+						<img src="images/product2.jpg" />
+					</div>
+					<div class="name">统一老坛酸菜面</div>
+					<div class="price text-red">￥4.00</div>
+					<div class="white-btn">
+						<a href="javascript:" class="btn left">下架</a>
+						<a href="javascript:" class="btn right">确认</a>
+					</div>
+				</div>
+				
+				<div class="list-detail">
+					<div class="pic">
+						<img src="images/product3.jpg" />
+					</div>
+					<div class="name">统一老坛酸菜面</div>
+					<div class="price text-red">￥4.00</div>
+					<div class="white-btn">
+						<a href="javascript:" class="btn left">下架</a>
+						<a href="javascript:" class="btn right">确认</a>
+					</div>
+				</div>
+				
+				<div class="list-detail">
+					<div class="pic">
+						<img src="images/product4.jpg" />
+					</div>
+					<div class="name">统一老坛酸菜面</div>
+					<div class="price text-red">￥4.00</div>
+					<div class="white-btn">
+						<a href="javascript:" class="btn left">下架</a>
+						<a href="javascript:" class="btn right">确认</a>
+					</div>
+				</div>
+				
+			</div>
+			
+			
+			
+			
+		</div>
+	</div>
+	
+	
+</body>
+
+
+</html>

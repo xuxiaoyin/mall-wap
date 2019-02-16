@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>注册表</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/theme.css"/>
+	<link rel="stylesheet" type="text/css" href="css/font.css"/>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js" ></script>
+	<script type="text/javascript" src="js/tab.js" ></script>
+</head>
+<script>
+	var html = document.getElementsByTagName('html')[0];
+	var pageWidth = html.getBoundingClientRect().width;
+	pageWidth = pageWidth > 750 ? 750 : pageWidth;
+	html.style.fontSize = pageWidth / 15 + 'px';
+</script>
+	
+<body>
+	<div class="main">
+		<div class="add-btn">
+			<div class="add text-theme">+</div>
+			<div class="text-theme text">添加图片</div>
+		</div>
+		<ul class="register-list">
+			<li class="list">
+				<img src="images/reg-icon1.png" class="icon"><input type="text" placeholder="请输入店铺名">
+			</li>
+			<li class="list">
+				<img src="images/reg-icon2.png" class="icon"><input type="text" placeholder="请输入姓名">
+			</li>
+			<li class="list">
+				<img src="images/reg-icon3.png" class="icon"><input type="text" placeholder="请输入手机号码">
+			</li>
+			<li class="list">
+				<img src="images/reg-icon4.png" class="icon"><input type="text" placeholder="请输入地址">
+			</li>
+		</ul>
+		<div class="select">
+			<h3 class="title">选择分类：</h3>
+			<div class="clearfix">
+				<a href="javascript:" class="item">食品</a>
+				<a href="javascript:" class="item">烟酒</a>
+				<a href="javascript:" class="item">饮料</a>
+				<a href="javascript:" class="other item">其他</a>
+			</div>
+			<div class="sure-btn">
+				<input type="btn" value="立即注册"  class="btn"/>
+				<input type="btn" value="取消"  class="btn"/>
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+		$('.select .item').attr('onOff',1)
+		$('.select .item').click(function(){
+			if( $(this).attr('onOff')==1){
+				$(this).addClass('active')
+				$(this).attr('onOff',0)
+			}else {
+				$(this).removeClass('active')
+				$(this).attr('onOff',1)
+			}
+		})
+	</script>
+	
+</body>
+
+
+</html>

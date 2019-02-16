@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="divport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+		<meta name="misapplication-tap-highlight" content="no"/>
+		<meta name="HandheldFriendly" content="true"/>
+		<meta name="MobileOptimized" content="320"/>
+		<script src="js/mui.min.js"></script>
+    	<script src="js/jquery.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet"/>
+		<link rel="stylesheet" type="text/css" href="css/product.css"/>
+		<link rel="stylesheet" href="css/common.css" />
+	</head>
+	<body>
+		<!--<import src="../../wxParse/wxParse.wxml"/>-->
+
+
+<div class="wrap">
+    <div class="banner">
+			<div class="mui-slider">
+				<div class="mui-slider-group">
+				    <!--第一个内容区容器-->
+				    <div class="mui-slider-item">
+				      <img src="img/product-1.png"/>
+				    </div>
+				    <!--第二个内容区-->
+				    <div class="mui-slider-item">
+				      <img src="img/product-1.png"/>
+				    </div>
+				    <div class="mui-slider-item">
+				      <img src="img/product-1.png"/>
+				    </div>
+				    <div class="mui-slider-item">
+				      <img src="img/product-1.png"/>
+				    </div>
+				  </div>
+			  	
+			  	<div class="mui-slider-indicator">
+				    <div class="mui-indicator mui-active"></div>
+				    <div class="mui-indicator"></div>
+				    <div class="mui-indicator"></div>
+				    <div class="mui-indicator"></div>
+				</div>
+			</div>
+		</div>
+    
+    <div class="productInfo">
+
+        <div class="title">
+           	 名字
+        </div>
+        <div class="num">
+            <div class="money">
+               
+                <div class="quantity" >
+                    存库 <div class="quantityNum">121</div>件
+                </div>
+            </div>
+
+            <div class="save">
+                <div class="seckillMoney">
+                    	市场价：￥23
+                </div>
+                <div class="saves">销量：100</div>
+            </div>
+
+        </div>
+    </div>
+    <div class="line"></div>
+
+    <div class="tab">
+            <div class="swiper-tab">
+                <div class="swiper-tab-item on">图文详情</div>
+               
+            </div>
+
+            <div style="width: 100%;">
+                <div class="ChannelContent"  id="ChannelContent" style="width: 100%;">
+                   <img src="img/product-1.png"/>
+                </div>
+            </div>
+
+    </div>
+</div>
+<div class="footer">
+    <div class="home" bindtap="toIndex"><img src="./img/home.png"></img></div>
+
+
+ <div class="buy" bindtap="toSelect" onclick="javascript: location.assign('cart.html')">加入购物车</div>
+
+    <div class="buyCar" bindtap="toCar"><img src="./img/car.png"></img>立即购买</div>
+</div>
+
+
+
+
+
+
+	</body>
+</html>
